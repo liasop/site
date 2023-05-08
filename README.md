@@ -1,1 +1,1 @@
-# site
+static site at https://liasop.github.io/site/
