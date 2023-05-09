@@ -82,6 +82,9 @@ body {
   .artwork-item {
     width: calc(50% - 30px);
     margin: 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    
   }
   .artwork-item img {
     display: block;
