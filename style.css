@@ -47,7 +47,7 @@ body {
   }
   
   nav a:hover {
-    color: rgb(245, 247, 152) 
+    color: rgb(245, 247, 152);
     /* color: rgba(31,31,31,255); */
   }
   
@@ -55,7 +55,7 @@ body {
     margin-top: 80px;
     text-align: center;
     color: rgba(114,218,140,255);
-
+    padding: 20px;
   }
   
   h1 {
