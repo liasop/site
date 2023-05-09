@@ -80,11 +80,15 @@ body {
     flex-wrap: wrap;
   }
   .artwork-item {
-    width: 50%; 
-    margin-bottom: 30px;
+    width: calc(50% - 30px);
+    margin: 15px;
   }
   .artwork-item img {
     display: block;
     max-width: 100%;
     height: auto;
   }
+  @media screen and (max-width: 768px) {
+    .artwork-item {
+      width: calc(100% - 30px);
+    }
