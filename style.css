@@ -47,8 +47,8 @@ body {
   }
   
   nav a:hover {
-    color: rgba(114,218,140,255);
-    color: rgba(31,31,31,255);
+    color: rgb(245, 247, 152) 
+    /* color: rgba(31,31,31,255); */
   }
   
   main {
