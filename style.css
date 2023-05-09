@@ -70,3 +70,21 @@ body {
     padding: 10px;
   }
   
+  .left-aligned {
+    text-align: left;
+  }
+
+  .artwork-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .artwork-item {
+    width: 50%; 
+    margin-bottom: 30px;
+  }
+  .artwork-item img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
