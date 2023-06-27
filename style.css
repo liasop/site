@@ -99,10 +99,12 @@ body {
 
 .contact-icons {
   display: flex;
-  justify-content: center; /* Adjust alignment as needed */
-  gap: 10px; /* Adjust spacing between icons as needed */
+  justify-content: center;
+  align-items: flex-end; /* Align icons to the bottom */
+  gap: 20px;
+  margin-top: 50px; /* Increase or decrease margin as needed */
 }
 
-.contact-icons img {
-  width: 30px; /* Adjust icon size as needed */
+.icon {
+  width: 40px; /* Increase or decrease icon size as needed */
 }
