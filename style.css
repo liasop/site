@@ -55,7 +55,6 @@ body {
     margin-top: 80px;
     text-align: center;
     color: rgba(114,218,140,255);
-    padding: 20px;
   }
   
   h1 {
@@ -78,6 +77,7 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 15px;
   }
   .artwork-item {
     width: calc(50% - 30px);
@@ -95,4 +95,14 @@ body {
     .artwork-item {
       width: calc(100% - 30px);
     }
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center; /* Adjust alignment as needed */
+  gap: 10px; /* Adjust spacing between icons as needed */
+}
+
+.contact-icons img {
+  width: 30px; /* Adjust icon size as needed */
 }
