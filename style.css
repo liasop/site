@@ -1,20 +1,20 @@
 @font-face {
   font-family: 'SavateFont';
-    src: url("savate_otf/savate-regular.otf");
+    src: url("savate_otf/savate-italique.otf");
 }
 
 body {
     margin: 0;
     padding: 0;
     font-family: 'AUTHENTIC Sans';
-    background-color: rgba(31,31,31,255);
-    color: rgba(114,218,140,255);
+    background-color: #f7eed7;
+    color: #363430;
   }
 
 
   header {
-    background-color: rgba(31,31,31,255);
-    color: rgba(114,218,140,255);
+    background-color: #f7eed7;
+    color: #363430;
     padding: 20px;
     position: fixed;
     top: 0;
@@ -37,7 +37,7 @@ body {
   }
   
   nav a {
-    color: rgba(114,218,140,255);
+    color: #363430;
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
@@ -47,14 +47,13 @@ body {
   }
   
   nav a:hover {
-    color: rgb(245, 247, 152);
-    /* color: rgba(31,31,31,255); */
+    color: #666666;
   }
   
   main {
     margin-top: 80px;
     text-align: center;
-    color: rgba(114,218,140,255);
+    color: #363430;
   }
   
   h1 {
@@ -99,12 +98,12 @@ body {
 
 .contact-icons {
   justify-content: center;
-  align-items: flex-end; /* Align icons to the bottom */
+  align-items: flex-end;
   gap: 200px;
-  margin-top: 200px; /* Increase or decrease margin as needed */
+  margin-top: 200px;
 }
 
 .icon {
-  width: 100px; /* Increase or decrease icon size as needed */
-  filter: invert(1);
+  width: 100px;
+  filter: invert(0); /* Changed from invert(1) to invert(0) since we're using dark text on light background now */
 }
