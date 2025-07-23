@@ -67,13 +67,25 @@ h2 {
     padding: 0;
 }
 
+.blog-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.blog-content p {
+    text-align: left;
+    width: 100%;
+}
+
 .center-image {
     text-align: center;
 }
 
 .center-image img {
-    max-width: 100%;
+    max-width: 25%;
     height: auto;
+    margin: 20px;
+    display: inline-block;
 }
 
 p {
