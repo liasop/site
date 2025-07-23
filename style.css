@@ -6,7 +6,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'AUTHENTIC Sans';
+    font-family: 'Lucida Sans', 'Lucida Grande', 'Segoe UI', sans-serif;
     background-color: #f7eed7;
     color: #363430;
     display: flex;
