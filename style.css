@@ -28,10 +28,16 @@ body {
     width: calc(100% - 240px);
 }
 
+.main-content > p {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 10px 10px 30px 10px;
+}
+
 nav ul {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 0 0 0 20px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -83,6 +89,8 @@ h2 {
 
 .center-image {
     text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .center-image img {
@@ -151,10 +159,14 @@ p {
 }
 
 .contact-icons {
+    display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     gap: 200px;
     margin-top: 200px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .icon {
