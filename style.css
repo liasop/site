@@ -9,101 +9,135 @@ body {
     font-family: 'AUTHENTIC Sans';
     background-color: #f7eed7;
     color: #363430;
-  }
+    display: flex;
+}
 
-
-  header {
-    background-color: #f7eed7;
-    color: #363430;
-    padding: 20px;
+.sidebar {
+    width: 200px;
+    height: 100vh;
     position: fixed;
-    top: 0;
     left: 0;
-    right: 0;
-    z-index: 999;
-  }
-  
-  nav ul {
+    top: 0;
+    padding: 20px;
+    background-color: #f7eed7;
+    border-right: 1px solid #363430;
+}
+
+.main-content {
+    margin-left: 240px;
+    padding: 20px;
+    width: calc(100% - 240px);
+}
+
+nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-between;
-  }
-  
-  nav li {
+    flex-direction: column;
+    gap: 20px;
+}
+
+nav li {
     margin: 0;
     padding: 0;
-  }
-  
-  nav a {
+}
+
+nav a {
     color: #363430;
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
     letter-spacing: 1px;
-    padding: 10px;
     transition: all 0.2s ease-in-out;
-  }
-  
-  nav a:hover {
+}
+
+nav a:hover {
     color: #666666;
-  }
-  
-  main {
-    margin-top: 80px;
-    text-align: center;
-    color: #363430;
-  }
-  
-  h1 {
-    font-size: 50px;
-    margin: 0;
+}
+
+.blog-entries {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #363430;
+}
+
+h2 {
+    font-size: 32px;
+    margin: 0 0 40px 0;
     padding: 0;
-  }
-  
-  p {
+}
+
+.center-image {
+    text-align: center;
+}
+
+.center-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+p {
     font-size: 24px;
     margin: 0;
     padding: 10px;
-  }
-  
-  .left-aligned {
-    text-align: left;
-  }
+}
 
-  .artwork-container {
+.left-aligned {
+    text-align: left;
+}
+
+.artwork-container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 15px;
-  }
-  .artwork-item {
+}
+
+.artwork-item {
     width: calc(50% - 30px);
     margin: 15px;
     padding: 15px;
     box-sizing: border-box;
-    
-  }
-  .artwork-item img {
+}
+
+.artwork-item img {
     display: block;
     max-width: 100%;
     height: auto;
-  }
-  @media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 768px) {
     .artwork-item {
-      width: calc(100% - 30px);
+        width: calc(100% - 30px);
+    }
+    
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        border-right: none;
+        border-bottom: 1px solid #363430;
+    }
+    
+    .main-content {
+        margin-left: 0;
+        width: 100%;
+    }
+    
+    body {
+        flex-direction: column;
     }
 }
 
 .contact-icons {
-  justify-content: center;
-  align-items: flex-end;
-  gap: 200px;
-  margin-top: 200px;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 200px;
+    margin-top: 200px;
 }
 
 .icon {
-  width: 100px;
-  filter: invert(0); /* Changed from invert(1) to invert(0) since we're using dark text on light background now */
+    width: 100px;
+    filter: invert(0);
 }
