@@ -10,6 +10,8 @@
 *.sln
 *.sw?
 
+rename_images.py
+
 # System Files
 Thumbs.db
 desktop.ini
