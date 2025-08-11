@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <li><a href="${prefix}about.html">About</a></li>
                     <li><a href="${prefix}contact.html">Contact</a></li>
                     <li class="blog-entries">
+                        <a href="${prefix}blog/8.10.25.html">8.10.25</a>
                         <a href="${prefix}blog/8.9.25.html">8.9.25</a>
                         <a href="${prefix}blog/8.8.25.html">8.8.25</a>
                         <a href="${prefix}blog/8.7.25.html">8.7.25</a>
