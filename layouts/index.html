@@ -1,0 +1,9 @@
+{{ define "main" }}
+    <h2>{{ .Site.Title }}</h2>
+    <p class="left-aligned">
+        {{ .Content }}
+    </p>
+    <div class="center-image">
+        <img src="{{ "images/lia.png" | relURL }}" alt="lia" width="600">
+    </div>
+{{ end }}

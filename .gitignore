@@ -10,7 +10,9 @@
 *.sln
 *.sw?
 
-rename_images.py
+# Hugo files
+resources/
+.hugo_build.lock
 
 # System Files
 Thumbs.db

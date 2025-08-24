@@ -1,0 +1,41 @@
+{{ $image := .Page.Resources.GetMatch .Destination }}
+{{ if $image }}
+  {{ $maxWidth := 450 }}
+  
+  <!-- Apply AutoOrient first to handle EXIF rotation properly -->
+  {{ $orientedImage := $image.Filter images.AutoOrient }}
+  {{ $imageWidth := $orientedImage.Width }}
+  
+  <!-- If image is wider than max width, resize it -->
+  {{ if gt $imageWidth $maxWidth }}
+    {{ $image1x := $orientedImage.Resize (printf "%dx" $maxWidth) }}
+    {{ $image2x := $orientedImage.Resize (printf "%dx" (mul $maxWidth 2)) }}
+    
+    <img 
+      src="{{ $image1x.RelPermalink }}" 
+      srcset="{{ $image1x.RelPermalink }} 1x, {{ $image2x.RelPermalink }} 2x"
+      alt="{{ .Text }}"
+      title="{{ .Title }}"
+      loading="lazy"
+    />
+  {{ else }}
+    <!-- Image is already smaller than max width, just create 2x version -->
+    {{ $image2x := $orientedImage.Resize (printf "%dx" (mul $imageWidth 2)) }}
+    
+    <img 
+      src="{{ $orientedImage.RelPermalink }}" 
+      srcset="{{ $orientedImage.RelPermalink }} 1x, {{ $image2x.RelPermalink }} 2x"
+      alt="{{ .Text }}"
+      title="{{ .Title }}"
+      loading="lazy"
+    />
+  {{ end }}
+{{ else }}
+  <!-- Fallback for images not in page resources -->
+  <img 
+    src="{{ .Destination }}" 
+    alt="{{ .Text }}"
+    title="{{ .Title }}"
+    loading="lazy"
+  />
+{{ end }}
