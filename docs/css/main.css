@@ -1,0 +1,262 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Monaco, 'Courier New', monospace;
+    background-color: #f7eed7;
+    color: #363430;
+    display: flex;
+}
+
+.sidebar {
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 40px 20px;
+    background-color: #f7eed7;
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.main-content {
+    margin-left: 140px;
+    padding: 20px;
+    width: calc(100% - 240px);
+}
+
+.main-content > p {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 10px 10px 30px 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+nav li {
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: #363430;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: all 0.2s ease-in-out;
+}
+
+nav a:hover {
+    color: #666666;
+}
+
+.blog-entries {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #363430;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.blog-entries a {
+    display: block;
+    padding: 5px 0;
+}
+
+h1, h2 {
+    font-size: 24px;
+    margin: 20px 0 40px 0;
+    padding: 0;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.blog-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.blog-content p {
+    text-align: left;
+    width: 100%;
+    padding: 10px 10px 30px 10px;
+}
+
+.center-image {
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.center-image img {
+    max-width: 75%;
+    height: auto;
+    margin: 0;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.center-image img.wide-image {
+    max-width: 90%;
+}
+
+p {
+    font-size: 18px;
+    margin: 0;
+    padding: 10px;
+}
+
+.left-aligned {
+    text-align: left;
+}
+
+/* Works page specific styles */
+.works-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.artwork-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 15px;
+    gap: 20px;
+}
+
+.artwork-item {
+    width: calc(50% - 30px);
+    margin: 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.artwork-item:hover {
+    transform: scale(1.02);
+}
+
+.artwork-item img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact page specific styles */
+.contact-page {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    margin-top: 100px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.icon {
+    width: 100px;
+    filter: invert(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+}
+
+.recipe-list {
+    list-style: none;
+    padding: 10px 20px;
+    margin: 0 0 30px 0;
+}
+
+.recipe-list li {
+    padding: 8px 0;
+    border-bottom: 1px dotted #36343030;
+    font-size: 14px;
+}
+
+.recipe-list li:last-child {
+    border-bottom: none;
+}
+
+.rotate-90 {
+    transform: rotate(270deg);
+    transform-origin: center;
+    margin: 50px 0;
+}
+
+/* Responsive image styles */
+.blog-content img,
+.blog-content picture {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 2rem 0 2rem 0;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blog-content picture img {
+    margin: 2rem 0 2rem 0;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+    .artwork-item {
+        width: calc(100% - 30px);
+    }
+    
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        border-bottom: 1px solid #363430;
+    }
+    
+    .main-content {
+        margin-left: 0;
+        width: 100%;
+    }
+    
+    body {
+        flex-direction: column;
+    }
+    
+    .contact-icons {
+        gap: 100px;
+        margin-top: 50px;
+    }
+    
+    .icon {
+        width: 80px;
+    }
+}

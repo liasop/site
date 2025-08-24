@@ -1,0 +1,27 @@
+{{ define "main" }}
+<div class="works-page">
+    <h1>{{ .Title }}</h1>
+    
+    <div class="artwork-container">
+        <div class="artwork-item">
+            <img src="{{ "images/Glut.png" | relURL }}" alt="Glut Artwork">
+        </div>
+
+        <div class="artwork-item">
+            <img src="{{ "images/Annais4.gif" | relURL }}" alt="Annais4 Animated GIF">
+        </div>
+
+        <div class="artwork-item">
+            <img src="{{ "images/Annais_1.1.gif" | relURL }}" alt="Annais 1.1 Animated GIF">
+        </div>
+
+        <div class="artwork-item">
+            <img src="{{ "images/Reflection.png" | relURL }}" alt="Reflection Artwork">
+        </div>
+
+        <div class="artwork-item">
+            <img src="{{ "images/Tounge_Color.png" | relURL }}" alt="Tounge Color Artwork">
+        </div>
+    </div>
+</div>
+{{ end }}

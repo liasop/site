@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{ $style := resources.Get "css/main.css" }}
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+  </head>
+  <body>
+    {{ partial "nav.html" . }}
+    <main class="main-content">
+      {{ block "main" . }}{{ end }}
+    </main>
+  </body>
+</html>
