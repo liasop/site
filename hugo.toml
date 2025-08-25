@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://liasop.github.io/site/'
 languageCode = 'en-us'
 title = 'Lia Chin-Purcell'
 publishDir = 'docs'
