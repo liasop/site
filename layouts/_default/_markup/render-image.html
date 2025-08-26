@@ -1,4 +1,8 @@
-{{ $image := .Page.Resources.GetMatch .Destination }}
+{{ $imagePath := .Destination }}
+{{ if hasPrefix $imagePath "./" }}
+  {{ $imagePath = strings.TrimPrefix "./" $imagePath }}
+{{ end }}
+{{ $image := .Page.Resources.GetMatch $imagePath }}
 {{ if $image }}
   {{ $maxWidth := 450 }}
   
@@ -38,4 +42,5 @@
     title="{{ .Title }}"
     loading="lazy"
   />
+  {{ warnf "Image not found as page resource: %s" .Destination }}
 {{ end }}

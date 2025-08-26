@@ -1,6 +1,6 @@
 ---
-title: "7.26.27"
-date: 2027-07-26
+title: "7.26.25"
+date: 2025-07-26
 ---
 
 This was my view of the water from Breadbelly B12 this morning. This is July in SF!
