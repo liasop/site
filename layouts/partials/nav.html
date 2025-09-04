@@ -5,6 +5,7 @@
             <li><a href="{{ "works" | relURL }}">Works</a></li>
             <li><a href="{{ "about" | relURL }}">About</a></li>
             <li><a href="{{ "contact" | relURL }}">Contact</a></li>
+            <li><a href="{{ "tags" | relURL }}">Tags</a></li>
             <li class="blog-entries">
                 {{ range where .Site.RegularPages "Section" "blog" | first 30 }}
                     <a href="{{ .RelPermalink }}">{{ .Title }}</a>
