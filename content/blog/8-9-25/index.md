@@ -9,9 +9,14 @@ Some different energy at the festival today, maybe less nervousness that can go 
 seeing all the people sitting at different moments, and the little pockets of the festival 
 that I hadn't seen yet.
 This was at Good Neighbours.
+
 ![Image 1](img1.jpeg)
+
 Soma stage for girlmath.
+
 ![Image 2](img2.jpeg)
+
 Ended the night with Vampire Weekend. There was one part of the set where they took requests from the crowd, non-Vampire Weekend songs.
 Very fun and brave and shows how talented the group is. 
+
 ![Image 3](img3.jpeg)

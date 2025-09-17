@@ -9,4 +9,5 @@ afterwards. It was a cool space, very new. The sauna was very nice. A perfect
 pre-Outsidelands activity. The yoga class by Grace was also very nice, she 
 has a specific style that I like and I remember doing specific poses only
 from her classes.
+
 ![Image 1](img1.png)
