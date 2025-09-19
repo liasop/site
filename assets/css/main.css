@@ -295,7 +295,7 @@ p {
 .rotate-90-ccw {
     transform: rotate(-90deg);
     width: auto;
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
     display: block;
     margin: 0 auto;
