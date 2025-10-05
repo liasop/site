@@ -1,6 +1,7 @@
 ---
 title: "10-3-25"
 date: 2025-10-03
+tags: ["run"]
 ---
 Friday, October 3rd, 2025
 

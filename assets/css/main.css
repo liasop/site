@@ -104,6 +104,57 @@ nav a:hover {
     padding: 5px 0;
 }
 
+/* Month grouping styles */
+.month-group {
+    margin-bottom: 15px;
+}
+
+.month-header {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--border-subtle);
+    transition: all 0.2s ease-in-out;
+}
+
+.month-header:hover {
+    background-color: var(--hover-bg);
+    padding-left: 5px;
+}
+
+.month-title {
+    font-weight: bold;
+    font-size: 14px;
+    color: var(--text);
+}
+
+.dropdown-arrow {
+    font-size: 12px;
+    color: var(--text-muted);
+    transition: transform 0.2s ease-in-out;
+}
+
+.month-posts {
+    padding-left: 15px;
+    margin-top: 8px;
+}
+
+.blog-post-link {
+    display: block;
+    padding: 4px 0;
+    font-size: 13px;
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.blog-post-link:hover {
+    color: var(--text);
+    padding-left: 5px;
+}
+
 h1, h2 {
     font-size: 24px;
     margin: 20px 0 40px 0;
@@ -234,6 +285,23 @@ p {
 
 .recipe-list li:last-child {
     border-bottom: none;
+}
+
+/* Tag dates styling */
+.tag-dates {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 5px;
+}
+
+.tag-dates .date {
+    background-color: var(--accent);
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 12px;
+    color: var(--text-muted);
+    border: 1px solid var(--border-subtle);
 }
 
 .rotate-90 {

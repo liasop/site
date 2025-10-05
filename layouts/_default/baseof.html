@@ -12,5 +12,19 @@
     <main class="main-content">
       {{ block "main" . }}{{ end }}
     </main>
+    <script>
+      function toggleMonth(monthKey) {
+        const monthPosts = document.getElementById('month-' + monthKey);
+        const arrow = document.querySelector(`[onclick="toggleMonth('${monthKey}')"] .dropdown-arrow`);
+        
+        if (monthPosts.style.display === 'none') {
+          monthPosts.style.display = 'block';
+          arrow.textContent = '▲';
+        } else {
+          monthPosts.style.display = 'none';
+          arrow.textContent = '▼';
+        }
+      }
+    </script>
   </body>
 </html>

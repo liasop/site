@@ -1,6 +1,8 @@
 ---
 title: "9.5.25"
 date: 2025-09-05
+tags: ["swallows"]
+
 ---
 Friday, September 5th, 2025
 

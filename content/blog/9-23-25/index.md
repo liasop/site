@@ -1,6 +1,7 @@
 ---
 title: "9-23-25"
 date: 2025-09-23
+tags: ["ceramics"]
 ---
 Tuesday, September 23rd, 2025
 

@@ -7,8 +7,20 @@
             <li><a href="{{ "contact" | relURL }}">Contact</a></li>
             <li><a href="{{ "tags" | relURL }}">Tags</a></li>
             <li class="blog-entries">
-                {{ range where .Site.RegularPages "Section" "blog" | first 30 }}
-                    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                {{ $blogPages := where .Site.RegularPages "Section" "blog" }}
+                {{ $groupedPages := $blogPages.GroupByDate "2006-01" }}
+                {{ range $groupedPages }}
+                    <div class="month-group">
+                        <div class="month-header" onclick="toggleMonth('{{ .Key }}')">
+                            <span class="month-title">{{ .Key | printf "%s-01" | dateFormat "January 2006" }}</span>
+                            <span class="dropdown-arrow">▼</span>
+                        </div>
+                        <div class="month-posts" id="month-{{ .Key }}" style="display: none;">
+                            {{ range .Pages }}
+                                <a href="{{ .RelPermalink }}" class="blog-post-link">{{ .Title }}</a>
+                            {{ end }}
+                        </div>
+                    </div>
                 {{ end }}
             </li>
         </ul>
