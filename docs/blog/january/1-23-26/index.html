@@ -1,700 +1,83 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>1-23-26 - Lia Chin-Purcell</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="/site/css/main.css">
-  </head>
-  <body>
-    <div class="sidebar">
-    <nav>
-        <ul>
-            <li><a href="/site/">Home</a></li>
-            <li><a href="/site/works">Works</a></li>
-            <li><a href="/site/about">About</a></li>
-            <li><a href="/site/contact">Contact</a></li>
-            <li><a href="/site/tags">Tags</a></li>
-            <li class="blog-entries">
-                
-                
-                
-                    <div class="month-group">
-                        <div class="month-header" onclick="toggleMonth('2026-01')">
-                            <span class="month-title">January 2026</span>
-                            <span class="dropdown-arrow">▼</span>
-                        </div>
-                        <div class="month-posts" id="month-2026-01" style="display: none;">
-                            
-                                <a href="/site/blog/january/1-23-26/" class="blog-post-link">1-23-26</a>
-                            
-                        </div>
-                    </div>
-                
-                    <div class="month-group">
-                        <div class="month-header" onclick="toggleMonth('2025-10')">
-                            <span class="month-title">October 2025</span>
-                            <span class="dropdown-arrow">▼</span>
-                        </div>
-                        <div class="month-posts" id="month-2025-10" style="display: none;">
-                            
-                                <a href="/site/blog/october/10-13-25/" class="blog-post-link">10-13-25</a>
-                            
-                                <a href="/site/blog/october/10-12-25/" class="blog-post-link">10-12-25</a>
-                            
-                                <a href="/site/blog/october/10-9-25/" class="blog-post-link">10-9-25</a>
-                            
-                                <a href="/site/blog/october/10-7-25/" class="blog-post-link">10-7-25</a>
-                            
-                                <a href="/site/blog/october/10-6-25/" class="blog-post-link">10-6-25</a>
-                            
-                                <a href="/site/blog/october/10-5-25/" class="blog-post-link">10-5-25</a>
-                            
-                                <a href="/site/blog/october/10-4-25/" class="blog-post-link">10-4-25</a>
-                            
-                                <a href="/site/blog/october/10-3-25/" class="blog-post-link">10-3-25</a>
-                            
-                                <a href="/site/blog/october/10-1-25/" class="blog-post-link">10-1-25</a>
-                            
-                        </div>
-                    </div>
-                
-                    <div class="month-group">
-                        <div class="month-header" onclick="toggleMonth('2025-09')">
-                            <span class="month-title">September 2025</span>
-                            <span class="dropdown-arrow">▼</span>
-                        </div>
-                        <div class="month-posts" id="month-2025-09" style="display: none;">
-                            
-                                <a href="/site/blog/september/9-30-25/" class="blog-post-link">9-30-25</a>
-                            
-                                <a href="/site/blog/september/9-29-25/" class="blog-post-link">9-29-25</a>
-                            
-                                <a href="/site/blog/september/9-27-25/" class="blog-post-link">9-27-25</a>
-                            
-                                <a href="/site/blog/september/9-26-25/" class="blog-post-link">9-26-25</a>
-                            
-                                <a href="/site/blog/september/9-25-25/" class="blog-post-link">9-25-25</a>
-                            
-                                <a href="/site/blog/september/9-24-25/" class="blog-post-link">9-24-25</a>
-                            
-                                <a href="/site/blog/september/9-23-25/" class="blog-post-link">9-23-25</a>
-                            
-                                <a href="/site/blog/september/9-22-25/" class="blog-post-link">9-22-25</a>
-                            
-                                <a href="/site/blog/september/9-21-25/" class="blog-post-link">9.21.25</a>
-                            
-                                <a href="/site/blog/september/9-20-25/" class="blog-post-link">9.20.25</a>
-                            
-                                <a href="/site/blog/september/9-19-25/" class="blog-post-link">9.19.25</a>
-                            
-                                <a href="/site/blog/september/9-18-25/" class="blog-post-link">9.18.25</a>
-                            
-                                <a href="/site/blog/september/9-17-25/" class="blog-post-link">9.17.25</a>
-                            
-                                <a href="/site/blog/september/9-16-25/" class="blog-post-link">9.16.25</a>
-                            
-                                <a href="/site/blog/september/9-15-25/" class="blog-post-link">9.15.25</a>
-                            
-                                <a href="/site/blog/september/9-14-25/" class="blog-post-link">9.14.25</a>
-                            
-                                <a href="/site/blog/september/9-13-25/" class="blog-post-link">9.13.25</a>
-                            
-                                <a href="/site/blog/september/9-12-25/" class="blog-post-link">9.12.25</a>
-                            
-                                <a href="/site/blog/september/9-11-25/" class="blog-post-link">9.11.25</a>
-                            
-                                <a href="/site/blog/september/9-10-25/" class="blog-post-link">9.10.25</a>
-                            
-                                <a href="/site/blog/september/9-9-25/" class="blog-post-link">9.9.25</a>
-                            
-                                <a href="/site/blog/september/9-8-25/" class="blog-post-link">9.8.25</a>
-                            
-                                <a href="/site/blog/september/9-7-25/" class="blog-post-link">9.7.25</a>
-                            
-                                <a href="/site/blog/september/9-6-25/" class="blog-post-link">9.6.25</a>
-                            
-                                <a href="/site/blog/september/9-5-25/" class="blog-post-link">9.5.25</a>
-                            
-                                <a href="/site/blog/september/9-4-25/" class="blog-post-link">9.4.25</a>
-                            
-                                <a href="/site/blog/september/9-3-25/" class="blog-post-link">9.3.25</a>
-                            
-                                <a href="/site/blog/september/9-2-25/" class="blog-post-link">9.2.25</a>
-                            
-                                <a href="/site/blog/september/9-1-25/" class="blog-post-link">9.1.25</a>
-                            
-                        </div>
-                    </div>
-                
-                    <div class="month-group">
-                        <div class="month-header" onclick="toggleMonth('2025-08')">
-                            <span class="month-title">August 2025</span>
-                            <span class="dropdown-arrow">▼</span>
-                        </div>
-                        <div class="month-posts" id="month-2025-08" style="display: none;">
-                            
-                                <a href="/site/blog/august/8-31-25/" class="blog-post-link">8.31.25</a>
-                            
-                                <a href="/site/blog/august/8-30-25/" class="blog-post-link">8.30.25</a>
-                            
-                                <a href="/site/blog/august/8-28-25/" class="blog-post-link">8.28.25</a>
-                            
-                                <a href="/site/blog/august/8-27-25/" class="blog-post-link">8.27.25</a>
-                            
-                                <a href="/site/blog/august/8-26-25/" class="blog-post-link">8.26.25</a>
-                            
-                                <a href="/site/blog/august/8-25-25/" class="blog-post-link">8.25.25</a>
-                            
-                                <a href="/site/blog/august/8-24-25/" class="blog-post-link">8.24.25</a>
-                            
-                                <a href="/site/blog/august/8-23-25/" class="blog-post-link">8.23.25</a>
-                            
-                                <a href="/site/blog/august/8-22-25/" class="blog-post-link">8.22.25</a>
-                            
-                                <a href="/site/blog/august/8-21-25/" class="blog-post-link">8.21.25</a>
-                            
-                                <a href="/site/blog/august/8-20-25/" class="blog-post-link">8.20.25</a>
-                            
-                                <a href="/site/blog/august/8-19-25/" class="blog-post-link">8.19.25</a>
-                            
-                                <a href="/site/blog/august/8-18-25/" class="blog-post-link">8.18.25</a>
-                            
-                                <a href="/site/blog/august/8-16-25/" class="blog-post-link">8.16.25</a>
-                            
-                                <a href="/site/blog/august/8-15-25/" class="blog-post-link">8.15.25</a>
-                            
-                                <a href="/site/blog/august/8-14-25/" class="blog-post-link">8.14.25</a>
-                            
-                                <a href="/site/blog/august/8-13-25/" class="blog-post-link">8.13.25</a>
-                            
-                                <a href="/site/blog/august/8-12-25/" class="blog-post-link">8.12.25</a>
-                            
-                                <a href="/site/blog/august/8-10-25/" class="blog-post-link">8.10.25</a>
-                            
-                                <a href="/site/blog/august/8-9-25/" class="blog-post-link">8.9.25</a>
-                            
-                                <a href="/site/blog/august/8-8-25/" class="blog-post-link">8.8.25</a>
-                            
-                                <a href="/site/blog/august/8-7-25/" class="blog-post-link">8.7.25</a>
-                            
-                                <a href="/site/blog/august/8-6-25/" class="blog-post-link">8.6.25</a>
-                            
-                                <a href="/site/blog/august/8-5-25/" class="blog-post-link">8.5.25</a>
-                            
-                                <a href="/site/blog/august/8-4-25/" class="blog-post-link">8.4.25</a>
-                            
-                                <a href="/site/blog/august/8-3-25/" class="blog-post-link">8.3.25</a>
-                            
-                                <a href="/site/blog/august/8-2-25/" class="blog-post-link">8.2.25</a>
-                            
-                                <a href="/site/blog/august/8-1-25/" class="blog-post-link">8.1.25</a>
-                            
-                        </div>
-                    </div>
-                
-                    <div class="month-group">
-                        <div class="month-header" onclick="toggleMonth('2025-07')">
-                            <span class="month-title">July 2025</span>
-                            <span class="dropdown-arrow">▼</span>
-                        </div>
-                        <div class="month-posts" id="month-2025-07" style="display: none;">
-                            
-                                <a href="/site/blog/july/7-30-25/" class="blog-post-link">7.30.25</a>
-                            
-                                <a href="/site/blog/july/7-29-25/" class="blog-post-link">7.29.25</a>
-                            
-                                <a href="/site/blog/july/7-28-25/" class="blog-post-link">7.28.25</a>
-                            
-                                <a href="/site/blog/july/7-27-25/" class="blog-post-link">7.27.25</a>
-                            
-                                <a href="/site/blog/july/7-26-27/" class="blog-post-link">7.26.25</a>
-                            
-                                <a href="/site/blog/july/7-25-25/" class="blog-post-link">7.25.25</a>
-                            
-                                <a href="/site/blog/july/7-24-25/" class="blog-post-link">7.24.25</a>
-                            
-                                <a href="/site/blog/july/7-23-25/" class="blog-post-link">7.23.25</a>
-                            
-                                <a href="/site/blog/july/7-22-25/" class="blog-post-link">7.22.25</a>
-                            
-                        </div>
-                    </div>
-                
-            </li>
-        </ul>
-    </nav>
-</div>
-
-    <main class="main-content">
-      
-    <h2>1-23-26</h2>
-    <div class="blog-content">
-        <p>As you may see, I hit a wall of posting. I was feeling like, increasingly, updating the blog everyday with the pictures that I had taken that day and some words, was a chore. It still felt interesting, I like documenting things and I like that this blog prompts me to take more pictures, but I also feel like its not quite living up to its full potential. There is creativity and expression that is not coming through with the old version. So I&rsquo;ve decided to try to keep posting, but in a way that feels more interesting and true and expressive.</p>
-<p>I struggle a little bit with writing more, and going more in-depth, becuase I feel very aware that this is public and that feels vunerable. But also, I think thats fine, and I think its worth it to feel more creative to have some risk that maybe at some point in the future I will feel embarassed that this is out there for everyone to see. I feel resistant to this feeling like a journal, but I also want to be true and express myself and curate/write/share interesting things! I guess perhaps I am touching on the fear of being known.</p>
-<p>Luckily, Kurt sent me some example bloggers who I really enjoy, and I feel more inspired to just write and share and express. Becuase, whatever!</p>
-<p>So, the first topic is, brain space, what happens when we (I) don&rsquo;t work and have unstructured, more attuned, less urgent, and more ambling life. To orient the topic, I was recently talking with a co worker of mine who was asking about what I was doing in my free time since quitting one of my part time jobs. We got onto the topic of (1) being very dedicated to work, it being something that we are very passionate about and spending a lot of time and energy on it (2) the opening up of brain space that happens when you are not working.</p>
-<p>Basically, we were noting a difference between us: she works a lot, and is very dedicated to her work, it is very motiviating to her. She likened it to artistry, and maybe her dedication to having artistic parents to instilled in her the idea that you should be very passionate about the work that you do. I on the other hand, at least currently and especially in the past 3 years or so, feel like it is very important to me to not only do work. That I easily feel tunnel visioned when working a full time job, or going to school full time, and that I so much crave the open-endedness of not working, the open-brainness, the other beautiful things there are to experience and do that are outsite the rat race. And thus the need to do multiple things perhaps, balance things, not just have this one full time desk job. Its easy for me to clock out usually, I hardly every work late.</p>
-<p>I don&rsquo;t know exactly when this started or why, but I felt a sharp increase about 3 years ago as mentioned. I remember talking with another friend about why this might have occured, and the thing that felt the most truthful was being introduced to a new world that involved embodiment, meditation, spirituality, etc. But I don&rsquo;t think thats the whole answer, and I don&rsquo;t really know the exact connection between the two.</p>
-<p>Another topic that feels connected is a Rumi poem about various &ldquo;wines&rdquo; in our life, and to be cautious of the wines, especially the ones that have urgency about &ldquo;what&rsquo;s needed&rdquo;. Rather to gravitate towards wines that make you &ldquo;amble about like a camel that has been untied&rdquo; or something along these lines. I love this line.</p>
-<p>In the past since the rise of online everything due to COVID, I&rsquo;ve thought that maybe an antidote to to the bad feelings that go along with working so much was to try to not be on my screen as much as possible. To re enter the real world and fully absorb everything that is happening here. And if I&rsquo;m not doing that, and I am feeling like I need to relax etc. perhaps looking at the blank wall. I&rsquo;ve actually really enjoyed looking at the blank wall and seeing what comes about from doing that.</p>
-<p>However I think there are meaningful ways to interact with the screen that are mind-opening, inspiring, creative, educational, etc. The internet isn&rsquo;t all bad! But also there are so many bad things, and so many convieniences right at our finger tips that when I really think about them produce a kind of ache in my body for a time/space when you don&rsquo;t have these things.</p>
-<p>One related connection is that I spent some time on long wilderness trips, and there is a very specific and very beautiful thing that happens when you are a couple of weeks into not looking at any screen not having any input from the commotion of the world. A healing of the mind, I think, and spiritual connection with the land and the world. So sometimes I feel like I am craving this, and as a result will be like oh we just need to not look at screens.</p>
-<p>Caffeine I think is another interesting factor in all of this, as I think going off caffeine was another contributor to this sharp increase in feeling like I suddenly didn&rsquo;t care so much about work and instead opened my mind to other things. At one point, I was like caffeine is the only way I actually enjoy doing work. However, it also makes me afraid. I thought this was a sign I definetly should not being doing whatever work I was doing- as I was both afraid of it and also didn&rsquo;t want to do it without a stimulant.</p>
-<p>Okay, now time for some pictures from the past few months :')</p>
-<p>
-
-  
-
-
-
-  
-  
-  
-  
-  
-  
-  
-  
-    
-    
-    
-    <img 
-      src="/site/blog/january/1-23-26/image15_hu_ee549ee01119664d.png" 
-      srcset="/site/blog/january/1-23-26/image15_hu_ee549ee01119664d.png 1x, /site/blog/january/1-23-26/image15_hu_ff4d1fcfa9fd5fc9.png 2x"
-      alt="Image 15"
-      title=""
-      loading="lazy"
-    />
-  
-
-</p>
-<p>Swimming with Kurt at Baker beach</p>
-<p>
-
-  
-
-
-
-  
-  
-  
-  
-  
-  
-  
-  
-    
-    
-    
-    <img 
-      src="/site/blog/january/1-23-26/image14_hu_a5298243d82971ec.png" 
-      srcset="/site/blog/january/1-23-26/image14_hu_a5298243d82971ec.png 1x, /site/blog/january/1-23-26/image14_hu_966e084c4ee8edad.png 2x"
-      alt="Image 14"
-      title=""
-      loading="lazy"
-    />
-  
-
-</p>
-<p>Trying to take a beautiful picture of the sutro baths at sunset but Kurt got in the way.</p>
-<p>
-
-  
-
-
-
-  
-  
-  
-  
-  
-  
-  
-  
-    
-    
-    
-    <img 
-      src="/site/blog/january/1-23-26/image13_hu_c233002b4b9fd78a.png" 
-      srcset="/site/blog/january/1-23-26/image13_hu_c233002b4b9fd78a.png 1x, /site/blog/january/1-23-26/image13_hu_da26f7d8561c282b.png 2x"
-      alt="Image 13"
-      title=""
-      loading="lazy"
-    />
-  
-
-</p>
-<p>Sloice</p>
-<p>
-
-  
-
-
-
-  
-  
-  
-  
-  
-  
-  
-  
-    
-    
-    
-    <img 
-      src="/site/blog/january/1-23-26/image12_hu_a0fa63c920530727.png" 
-      srcset="/site/blog/january/1-23-26/image12_hu_a0fa63c920530727.png 1x, /site/blog/january/1-23-26/image12_hu_27948b213ac4f5b4.png 2x"
-      alt="Image 12"
-      title=""
-      loading="lazy"
-    />
-  
-
-</p>
-<p>I painted over the man in a cowboy hat on my denim coat. His heads a bit big but I like how he turned out!</p>
-<p>
-
-  
-
-
-
-  
-  
-  
-  
-  
-  
-  
-  
-    
-    
-    
-    <img 
-      src="/site/blog/january/1-23-26/image11_hu_f0f8654dffd70090.png" 
-      srcset="/site/blog/january/1-23-26/image11_hu_f0f8654dffd70090.png 1x, /site/blog/january/1-23-26/image11_hu_2e99334766249dc9.png 2x"
-      alt="Image 11"
-      title=""
-      loading="lazy"
-    />
-  
-
-</p>
-<p>Lana and I went on a hike when we were staying at Indian Springs. We saw this fun waterfall and this neon green moss.</p>
-<p>
-
-  
-
-
-
-  
-  
-  
-  
-  
-  
-  
-  
-    
-    
-    
-    <img 
-      src="/site/blog/january/1-23-26/image10_hu_3790555bdb47c993.png" 
-      srcset="/site/blog/january/1-23-26/image10_hu_3790555bdb47c993.png 1x, /site/blog/january/1-23-26/image10_hu_ad0b8f9d1403c37a.png 2x"
-      alt="Image 10"
-      title=""
-      loading="lazy"
-    />
-  
-
-</p>
-<p>In Philly, Madelein&rsquo;s seal &ldquo;sealy&rdquo;. I can&rsquo;t explain the emotion when I see this stuffed animal, I love her!!</p>
-<p>
-
-  
-
-
-
-  
-  
-  
-  
-  
-  
-  
-  
-    
-    
-    
-    <img 
-      src="/site/blog/january/1-23-26/image9_hu_49616168f6749478.png" 
-      srcset="/site/blog/january/1-23-26/image9_hu_49616168f6749478.png 1x, /site/blog/january/1-23-26/image9_hu_79f0b4220bd038f1.png 2x"
-      alt="Image 9"
-      title=""
-      loading="lazy"
-    />
-  
-
-</p>
-<p>Also in Philly, two shoes I thought were weird and cool. These ones are birds.</p>
-<p>
-
-  
-
-
-
-  
-  
-  
-  
-  
-  
-  
-  
-    
-    
-    
-    <img 
-      src="/site/blog/january/1-23-26/image8_hu_d1ce02aec4bb0969.png" 
-      srcset="/site/blog/january/1-23-26/image8_hu_d1ce02aec4bb0969.png 1x, /site/blog/january/1-23-26/image8_hu_3de6e07b02a554ab.png 2x"
-      alt="Image 8"
-      title=""
-      loading="lazy"
-    />
-  
-
-</p>
-<p>These ones are grapes.</p>
-<p>
-
-  
-
-
-
-  
-  
-  
-  
-  
-  
-  
-  
-    
-    
-    
-    <img 
-      src="/site/blog/january/1-23-26/image7_hu_45353ce5e4aa5df1.png" 
-      srcset="/site/blog/january/1-23-26/image7_hu_45353ce5e4aa5df1.png 1x, /site/blog/january/1-23-26/image7_hu_b53879853b9c0436.png 2x"
-      alt="Image 7"
-      title=""
-      loading="lazy"
-    />
-  
-
-</p>
-<p>At an Italian market in Philly, huge things of cheese.</p>
-<p>
-
-  
-
-
-
-  
-  
-  
-  
-  
-  
-  
-  
-    
-    
-    
-    <img 
-      src="/site/blog/january/1-23-26/image6_hu_ce195359ac34c3cb.png" 
-      srcset="/site/blog/january/1-23-26/image6_hu_ce195359ac34c3cb.png 1x, /site/blog/january/1-23-26/image6_hu_e7824c989a5aa707.png 2x"
-      alt="Image 6"
-      title=""
-      loading="lazy"
-    />
-  
-
-</p>
-<p>Girl dinner huge pickle.</p>
-<p>
-
-  
-
-
-
-  
-  
-  
-  
-  
-  
-  
-  
-    
-    
-    
-    <img 
-      src="/site/blog/january/1-23-26/image5_hu_16bb253e43b81d61.png" 
-      srcset="/site/blog/january/1-23-26/image5_hu_16bb253e43b81d61.png 1x, /site/blog/january/1-23-26/image5_hu_9898c14dfe0d9c74.png 2x"
-      alt="Image 5"
-      title=""
-      loading="lazy"
-    />
-  
-
-</p>
-<p>With Annais after the sauna and cold plunge. Peep Manhattan in the background.</p>
-<p>
-
-  
-
-
-
-  
-  
-  
-  
-  
-  
-  
-  
-    
-    
-    
-    <img 
-      src="/site/blog/january/1-23-26/image4_hu_e6ba8f6f8c23045e.png" 
-      srcset="/site/blog/january/1-23-26/image4_hu_e6ba8f6f8c23045e.png 1x, /site/blog/january/1-23-26/image4_hu_8482c0a67a06ff7.png 2x"
-      alt="Image 4"
-      title=""
-      loading="lazy"
-    />
-  
-
-</p>
-<p>SLC on a run.</p>
-<p>
-
-  
-
-
-
-  
-  
-  
-  
-  
-  
-  
-  
-    
-    
-    
-    <img 
-      src="/site/blog/january/1-23-26/image3_hu_599bee07d9743b39.png" 
-      srcset="/site/blog/january/1-23-26/image3_hu_599bee07d9743b39.png 1x, /site/blog/january/1-23-26/image3_hu_a9be2cae4f0a3ef7.png 2x"
-      alt="Image 3"
-      title=""
-      loading="lazy"
-    />
-  
-
-</p>
-<p>Toe mug bisqued at my studio.</p>
-<p>
-
-  
-
-
-
-  
-  
-  
-  
-  
-  
-  
-  
-    
-    
-    
-    <img 
-      src="/site/blog/january/1-23-26/image2_hu_7d7f7830ec8acc18.png" 
-      srcset="/site/blog/january/1-23-26/image2_hu_7d7f7830ec8acc18.png 1x, /site/blog/january/1-23-26/image2_hu_5d6f955d35e6b27b.png 2x"
-      alt="Image 2"
-      title=""
-      loading="lazy"
-    />
-  
-
-</p>
-<p>Someones crazy top shelf at my studio.</p>
-<p>
-
-  
-
-
-
-  
-  
-  
-  
-  
-  
-  
-  
-    
-    
-    
-    <img 
-      src="/site/blog/january/1-23-26/image1_hu_2f75fab30880ec5b.png" 
-      srcset="/site/blog/january/1-23-26/image1_hu_2f75fab30880ec5b.png 1x, /site/blog/january/1-23-26/image1_hu_1778be53b2a2fc4.png 2x"
-      alt="Image 1"
-      title=""
-      loading="lazy"
-    />
-  
-
-</p>
-<p>Me!</p>
-<p>Some music I am liking:
-<a href="https://soundcloud.com/thelotradio/four-tet-the-lot-radio-12-01">Four Tet&rsquo;s lot radio set on Dec 1st 2025</a>
-<a href="https://soundcloud.com/thelotradio/haai-b2b-romy-the-lot-radio-01">Romy b2b Haai lot radio</a>
-From those two sets, some of my favorite songs have been</p>
-<p>[Gathaspar Op.3] (<a href="https://soundcloud.com/bianca-constantinescu/gathaspar-op-3-chypre002">https://soundcloud.com/bianca-constantinescu/gathaspar-op-3-chypre002</a>)
-[Cocteau Twins – Cherry-Coloured Funk (Stijn&rsquo;s House Mix)] (<a href="https://soundcloud.com/stijns-bootleg-remixes/cocteau-twins-cherry-coloured-funk-stijns-house-mix">https://soundcloud.com/stijns-bootleg-remixes/cocteau-twins-cherry-coloured-funk-stijns-house-mix</a>)</p>
-<p>Other songs I&rsquo;ve been enjoying and matching my vibe:</p>
-<ul>
-<li>All the things she said by t.A.T.u (from heated rivalry ofc)</li>
-<li>Drugs by Ratatat</li>
-<li>DANCE.. by Slayyter</li>
-<li>Lucifer by A.G. Cook</li>
-</ul>
-<p>xo
-Lia</p>
-
-    </div>
-
-    </main>
-    <script>
-      function toggleMonth(monthKey) {
-        const monthPosts = document.getElementById('month-' + monthKey);
-        const arrow = document.querySelector(`[onclick="toggleMonth('${monthKey}')"] .dropdown-arrow`);
-        
-        if (monthPosts.style.display === 'none') {
-          monthPosts.style.display = 'block';
-          arrow.textContent = '▲';
-        } else {
-          monthPosts.style.display = 'none';
-          arrow.textContent = '▼';
-        }
-      }
-    </script>
-  </body>
-</html>
+<!doctype html><html lang=en><head><meta charset=UTF-8><title>1-23-26 - Lia Chin-Purcell</title><meta name=viewport content="width=device-width,initial-scale=1"><link rel=stylesheet href=/site/css/main.css></head><body><div class=sidebar><nav><ul><li><a href=/site/>Home</a></li><li><a href=/site/works>Works</a></li><li><a href=/site/about>About</a></li><li><a href=/site/contact>Contact</a></li><li><a href=/site/tags>Tags</a></li><li class=blog-entries><div class=month-group><div class=month-header onclick='toggleMonth("2026-06")'><span class=month-title>June 2026</span>
+<span class=dropdown-arrow>▼</span></div><div class=month-posts id=month-2026-06 style=display:none><a href=/site/blog/june/6-22-26/ class=blog-post-link>6.22.26</a></div></div><div class=month-group><div class=month-header onclick='toggleMonth("2026-01")'><span class=month-title>January 2026</span>
+<span class=dropdown-arrow>▼</span></div><div class=month-posts id=month-2026-01 style=display:none><a href=/site/blog/january/1-23-26/ class=blog-post-link>1-23-26</a></div></div><div class=month-group><div class=month-header onclick='toggleMonth("2025-10")'><span class=month-title>October 2025</span>
+<span class=dropdown-arrow>▼</span></div><div class=month-posts id=month-2025-10 style=display:none><a href=/site/blog/october/10-13-25/ class=blog-post-link>10-13-25</a>
+<a href=/site/blog/october/10-12-25/ class=blog-post-link>10-12-25</a>
+<a href=/site/blog/october/10-9-25/ class=blog-post-link>10-9-25</a>
+<a href=/site/blog/october/10-7-25/ class=blog-post-link>10-7-25</a>
+<a href=/site/blog/october/10-6-25/ class=blog-post-link>10-6-25</a>
+<a href=/site/blog/october/10-5-25/ class=blog-post-link>10-5-25</a>
+<a href=/site/blog/october/10-4-25/ class=blog-post-link>10-4-25</a>
+<a href=/site/blog/october/10-3-25/ class=blog-post-link>10-3-25</a>
+<a href=/site/blog/october/10-1-25/ class=blog-post-link>10-1-25</a></div></div><div class=month-group><div class=month-header onclick='toggleMonth("2025-09")'><span class=month-title>September 2025</span>
+<span class=dropdown-arrow>▼</span></div><div class=month-posts id=month-2025-09 style=display:none><a href=/site/blog/september/9-30-25/ class=blog-post-link>9-30-25</a>
+<a href=/site/blog/september/9-29-25/ class=blog-post-link>9-29-25</a>
+<a href=/site/blog/september/9-27-25/ class=blog-post-link>9-27-25</a>
+<a href=/site/blog/september/9-26-25/ class=blog-post-link>9-26-25</a>
+<a href=/site/blog/september/9-25-25/ class=blog-post-link>9-25-25</a>
+<a href=/site/blog/september/9-24-25/ class=blog-post-link>9-24-25</a>
+<a href=/site/blog/september/9-23-25/ class=blog-post-link>9-23-25</a>
+<a href=/site/blog/september/9-22-25/ class=blog-post-link>9-22-25</a>
+<a href=/site/blog/september/9-21-25/ class=blog-post-link>9.21.25</a>
+<a href=/site/blog/september/9-20-25/ class=blog-post-link>9.20.25</a>
+<a href=/site/blog/september/9-19-25/ class=blog-post-link>9.19.25</a>
+<a href=/site/blog/september/9-18-25/ class=blog-post-link>9.18.25</a>
+<a href=/site/blog/september/9-17-25/ class=blog-post-link>9.17.25</a>
+<a href=/site/blog/september/9-16-25/ class=blog-post-link>9.16.25</a>
+<a href=/site/blog/september/9-15-25/ class=blog-post-link>9.15.25</a>
+<a href=/site/blog/september/9-14-25/ class=blog-post-link>9.14.25</a>
+<a href=/site/blog/september/9-13-25/ class=blog-post-link>9.13.25</a>
+<a href=/site/blog/september/9-12-25/ class=blog-post-link>9.12.25</a>
+<a href=/site/blog/september/9-11-25/ class=blog-post-link>9.11.25</a>
+<a href=/site/blog/september/9-10-25/ class=blog-post-link>9.10.25</a>
+<a href=/site/blog/september/9-9-25/ class=blog-post-link>9.9.25</a>
+<a href=/site/blog/september/9-8-25/ class=blog-post-link>9.8.25</a>
+<a href=/site/blog/september/9-7-25/ class=blog-post-link>9.7.25</a>
+<a href=/site/blog/september/9-6-25/ class=blog-post-link>9.6.25</a>
+<a href=/site/blog/september/9-5-25/ class=blog-post-link>9.5.25</a>
+<a href=/site/blog/september/9-4-25/ class=blog-post-link>9.4.25</a>
+<a href=/site/blog/september/9-3-25/ class=blog-post-link>9.3.25</a>
+<a href=/site/blog/september/9-2-25/ class=blog-post-link>9.2.25</a>
+<a href=/site/blog/september/9-1-25/ class=blog-post-link>9.1.25</a></div></div><div class=month-group><div class=month-header onclick='toggleMonth("2025-08")'><span class=month-title>August 2025</span>
+<span class=dropdown-arrow>▼</span></div><div class=month-posts id=month-2025-08 style=display:none><a href=/site/blog/august/8-31-25/ class=blog-post-link>8.31.25</a>
+<a href=/site/blog/august/8-30-25/ class=blog-post-link>8.30.25</a>
+<a href=/site/blog/august/8-28-25/ class=blog-post-link>8.28.25</a>
+<a href=/site/blog/august/8-27-25/ class=blog-post-link>8.27.25</a>
+<a href=/site/blog/august/8-26-25/ class=blog-post-link>8.26.25</a>
+<a href=/site/blog/august/8-25-25/ class=blog-post-link>8.25.25</a>
+<a href=/site/blog/august/8-24-25/ class=blog-post-link>8.24.25</a>
+<a href=/site/blog/august/8-23-25/ class=blog-post-link>8.23.25</a>
+<a href=/site/blog/august/8-22-25/ class=blog-post-link>8.22.25</a>
+<a href=/site/blog/august/8-21-25/ class=blog-post-link>8.21.25</a>
+<a href=/site/blog/august/8-20-25/ class=blog-post-link>8.20.25</a>
+<a href=/site/blog/august/8-19-25/ class=blog-post-link>8.19.25</a>
+<a href=/site/blog/august/8-18-25/ class=blog-post-link>8.18.25</a>
+<a href=/site/blog/august/8-16-25/ class=blog-post-link>8.16.25</a>
+<a href=/site/blog/august/8-15-25/ class=blog-post-link>8.15.25</a>
+<a href=/site/blog/august/8-14-25/ class=blog-post-link>8.14.25</a>
+<a href=/site/blog/august/8-13-25/ class=blog-post-link>8.13.25</a>
+<a href=/site/blog/august/8-12-25/ class=blog-post-link>8.12.25</a>
+<a href=/site/blog/august/8-10-25/ class=blog-post-link>8.10.25</a>
+<a href=/site/blog/august/8-9-25/ class=blog-post-link>8.9.25</a>
+<a href=/site/blog/august/8-8-25/ class=blog-post-link>8.8.25</a>
+<a href=/site/blog/august/8-7-25/ class=blog-post-link>8.7.25</a>
+<a href=/site/blog/august/8-6-25/ class=blog-post-link>8.6.25</a>
+<a href=/site/blog/august/8-5-25/ class=blog-post-link>8.5.25</a>
+<a href=/site/blog/august/8-4-25/ class=blog-post-link>8.4.25</a>
+<a href=/site/blog/august/8-3-25/ class=blog-post-link>8.3.25</a>
+<a href=/site/blog/august/8-2-25/ class=blog-post-link>8.2.25</a>
+<a href=/site/blog/august/8-1-25/ class=blog-post-link>8.1.25</a></div></div><div class=month-group><div class=month-header onclick='toggleMonth("2025-07")'><span class=month-title>July 2025</span>
+<span class=dropdown-arrow>▼</span></div><div class=month-posts id=month-2025-07 style=display:none><a href=/site/blog/july/7-30-25/ class=blog-post-link>7.30.25</a>
+<a href=/site/blog/july/7-29-25/ class=blog-post-link>7.29.25</a>
+<a href=/site/blog/july/7-28-25/ class=blog-post-link>7.28.25</a>
+<a href=/site/blog/july/7-27-25/ class=blog-post-link>7.27.25</a>
+<a href=/site/blog/july/7-26-27/ class=blog-post-link>7.26.25</a>
+<a href=/site/blog/july/7-25-25/ class=blog-post-link>7.25.25</a>
+<a href=/site/blog/july/7-24-25/ class=blog-post-link>7.24.25</a>
+<a href=/site/blog/july/7-23-25/ class=blog-post-link>7.23.25</a>
+<a href=/site/blog/july/7-22-25/ class=blog-post-link>7.22.25</a></div></div></li></ul></nav></div><main class=main-content><h2>1-23-26</h2><div class=blog-content><p>As you may see, I hit a wall of posting. I was feeling like, increasingly, updating the blog everyday with the pictures that I had taken that day and some words, was a chore. It still felt interesting, I like documenting things and I like that this blog prompts me to take more pictures, but I also feel like its not quite living up to its full potential. There is creativity and expression that is not coming through with the old version. So I&rsquo;ve decided to try to keep posting, but in a way that feels more interesting and true and expressive.</p><p>I struggle a little bit with writing more, and going more in-depth, becuase I feel very aware that this is public and that feels vunerable. But also, I think thats fine, and I think its worth it to feel more creative to have some risk that maybe at some point in the future I will feel embarassed that this is out there for everyone to see. I feel resistant to this feeling like a journal, but I also want to be true and express myself and curate/write/share interesting things! I guess perhaps I am touching on the fear of being known.</p><p>Luckily, Kurt sent me some example bloggers who I really enjoy, and I feel more inspired to just write and share and express. Becuase, whatever!</p><p>So, the first topic is, brain space, what happens when we (I) don&rsquo;t work and have unstructured, more attuned, less urgent, and more ambling life. To orient the topic, I was recently talking with a co worker of mine who was asking about what I was doing in my free time since quitting one of my part time jobs. We got onto the topic of (1) being very dedicated to work, it being something that we are very passionate about and spending a lot of time and energy on it (2) the opening up of brain space that happens when you are not working.</p><p>Basically, we were noting a difference between us: she works a lot, and is very dedicated to her work, it is very motiviating to her. She likened it to artistry, and maybe her dedication to having artistic parents to instilled in her the idea that you should be very passionate about the work that you do. I on the other hand, at least currently and especially in the past 3 years or so, feel like it is very important to me to not only do work. That I easily feel tunnel visioned when working a full time job, or going to school full time, and that I so much crave the open-endedness of not working, the open-brainness, the other beautiful things there are to experience and do that are outsite the rat race. And thus the need to do multiple things perhaps, balance things, not just have this one full time desk job. Its easy for me to clock out usually, I hardly every work late.</p><p>I don&rsquo;t know exactly when this started or why, but I felt a sharp increase about 3 years ago as mentioned. I remember talking with another friend about why this might have occured, and the thing that felt the most truthful was being introduced to a new world that involved embodiment, meditation, spirituality, etc. But I don&rsquo;t think thats the whole answer, and I don&rsquo;t really know the exact connection between the two.</p><p>Another topic that feels connected is a Rumi poem about various &ldquo;wines&rdquo; in our life, and to be cautious of the wines, especially the ones that have urgency about &ldquo;what&rsquo;s needed&rdquo;. Rather to gravitate towards wines that make you &ldquo;amble about like a camel that has been untied&rdquo; or something along these lines. I love this line.</p><p>In the past since the rise of online everything due to COVID, I&rsquo;ve thought that maybe an antidote to to the bad feelings that go along with working so much was to try to not be on my screen as much as possible. To re enter the real world and fully absorb everything that is happening here. And if I&rsquo;m not doing that, and I am feeling like I need to relax etc. perhaps looking at the blank wall. I&rsquo;ve actually really enjoyed looking at the blank wall and seeing what comes about from doing that.</p><p>However I think there are meaningful ways to interact with the screen that are mind-opening, inspiring, creative, educational, etc. The internet isn&rsquo;t all bad! But also there are so many bad things, and so many convieniences right at our finger tips that when I really think about them produce a kind of ache in my body for a time/space when you don&rsquo;t have these things.</p><p>One related connection is that I spent some time on long wilderness trips, and there is a very specific and very beautiful thing that happens when you are a couple of weeks into not looking at any screen not having any input from the commotion of the world. A healing of the mind, I think, and spiritual connection with the land and the world. So sometimes I feel like I am craving this, and as a result will be like oh we just need to not look at screens.</p><p>Caffeine I think is another interesting factor in all of this, as I think going off caffeine was another contributor to this sharp increase in feeling like I suddenly didn&rsquo;t care so much about work and instead opened my mind to other things. At one point, I was like caffeine is the only way I actually enjoy doing work. However, it also makes me afraid. I thought this was a sign I definetly should not being doing whatever work I was doing- as I was both afraid of it and also didn&rsquo;t want to do it without a stimulant.</p><p>Okay, now time for some pictures from the past few months :')</p><p><img src=/site/blog/january/1-23-26/image15_hu_82d34aca3b30851b.png srcset="/site/blog/january/1-23-26/image15_hu_82d34aca3b30851b.png 1x, /site/blog/january/1-23-26/image15_hu_e621404c2c302390.png 2x" alt="Image 15" title loading=lazy></p><p>Swimming with Kurt at Baker beach</p><p><img src=/site/blog/january/1-23-26/image14_hu_20c908016445a17e.png srcset="/site/blog/january/1-23-26/image14_hu_20c908016445a17e.png 1x, /site/blog/january/1-23-26/image14_hu_1098577c26d4b000.png 2x" alt="Image 14" title loading=lazy></p><p>Trying to take a beautiful picture of the sutro baths at sunset but Kurt got in the way.</p><p><img src=/site/blog/january/1-23-26/image13_hu_a221b22673deef64.png srcset="/site/blog/january/1-23-26/image13_hu_a221b22673deef64.png 1x, /site/blog/january/1-23-26/image13_hu_366af72be59c98d2.png 2x" alt="Image 13" title loading=lazy></p><p>Sloice</p><p><img src=/site/blog/january/1-23-26/image12_hu_d1b2e831becd3e1d.png srcset="/site/blog/january/1-23-26/image12_hu_d1b2e831becd3e1d.png 1x, /site/blog/january/1-23-26/image12_hu_c05e5b82755e4405.png 2x" alt="Image 12" title loading=lazy></p><p>I painted over the man in a cowboy hat on my denim coat. His heads a bit big but I like how he turned out!</p><p><img src=/site/blog/january/1-23-26/image11_hu_1d6041ad5bcc9cbd.png srcset="/site/blog/january/1-23-26/image11_hu_1d6041ad5bcc9cbd.png 1x, /site/blog/january/1-23-26/image11_hu_42a4254e402b41d8.png 2x" alt="Image 11" title loading=lazy></p><p>Lana and I went on a hike when we were staying at Indian Springs. We saw this fun waterfall and this neon green moss.</p><p><img src=/site/blog/january/1-23-26/image10_hu_409671b9d7653ad2.png srcset="/site/blog/january/1-23-26/image10_hu_409671b9d7653ad2.png 1x, /site/blog/january/1-23-26/image10_hu_eedf4449e4971303.png 2x" alt="Image 10" title loading=lazy></p><p>In Philly, Madelein&rsquo;s seal &ldquo;sealy&rdquo;. I can&rsquo;t explain the emotion when I see this stuffed animal, I love her!!</p><p><img src=/site/blog/january/1-23-26/image9_hu_11f136418a907ad0.png srcset="/site/blog/january/1-23-26/image9_hu_11f136418a907ad0.png 1x, /site/blog/january/1-23-26/image9_hu_7bcf6477bab5f893.png 2x" alt="Image 9" title loading=lazy></p><p>Also in Philly, two shoes I thought were weird and cool. These ones are birds.</p><p><img src=/site/blog/january/1-23-26/image8_hu_c1b87f6ff04c118f.png srcset="/site/blog/january/1-23-26/image8_hu_c1b87f6ff04c118f.png 1x, /site/blog/january/1-23-26/image8_hu_b901dd44cf24da02.png 2x" alt="Image 8" title loading=lazy></p><p>These ones are grapes.</p><p><img src=/site/blog/january/1-23-26/image7_hu_1a1b5cbca04244d7.png srcset="/site/blog/january/1-23-26/image7_hu_1a1b5cbca04244d7.png 1x, /site/blog/january/1-23-26/image7_hu_96b89824683b3fdf.png 2x" alt="Image 7" title loading=lazy></p><p>At an Italian market in Philly, huge things of cheese.</p><p><img src=/site/blog/january/1-23-26/image6_hu_3fdc310111b94e07.png srcset="/site/blog/january/1-23-26/image6_hu_3fdc310111b94e07.png 1x, /site/blog/january/1-23-26/image6_hu_10b0a406347cc86e.png 2x" alt="Image 6" title loading=lazy></p><p>Girl dinner huge pickle.</p><p><img src=/site/blog/january/1-23-26/image5_hu_7dfbcc45fe5ec300.png srcset="/site/blog/january/1-23-26/image5_hu_7dfbcc45fe5ec300.png 1x, /site/blog/january/1-23-26/image5_hu_33d0732f54d6ad0c.png 2x" alt="Image 5" title loading=lazy></p><p>With Annais after the sauna and cold plunge. Peep Manhattan in the background.</p><p><img src=/site/blog/january/1-23-26/image4_hu_a17a1969f3b5fa52.png srcset="/site/blog/january/1-23-26/image4_hu_a17a1969f3b5fa52.png 1x, /site/blog/january/1-23-26/image4_hu_dbe801301a684fb6.png 2x" alt="Image 4" title loading=lazy></p><p>SLC on a run.</p><p><img src=/site/blog/january/1-23-26/image3_hu_c342fdca75a2ec96.png srcset="/site/blog/january/1-23-26/image3_hu_c342fdca75a2ec96.png 1x, /site/blog/january/1-23-26/image3_hu_62888a9bf946ee7f.png 2x" alt="Image 3" title loading=lazy></p><p>Toe mug bisqued at my studio.</p><p><img src=/site/blog/january/1-23-26/image2_hu_74973da24dc24974.png srcset="/site/blog/january/1-23-26/image2_hu_74973da24dc24974.png 1x, /site/blog/january/1-23-26/image2_hu_56eaad22ff3532c8.png 2x" alt="Image 2" title loading=lazy></p><p>Someones crazy top shelf at my studio.</p><p><img src=/site/blog/january/1-23-26/image1_hu_590b372cd6d8200d.png srcset="/site/blog/january/1-23-26/image1_hu_590b372cd6d8200d.png 1x, /site/blog/january/1-23-26/image1_hu_2e92a71b4b6e38c2.png 2x" alt="Image 1" title loading=lazy></p><p>Me!</p><p>Some music I am liking:
+<a href=https://soundcloud.com/thelotradio/four-tet-the-lot-radio-12-01>Four Tet&rsquo;s lot radio set on Dec 1st 2025</a>
+<a href=https://soundcloud.com/thelotradio/haai-b2b-romy-the-lot-radio-01>Romy b2b Haai lot radio</a>
+From those two sets, some of my favorite songs have been</p><p>[Gathaspar Op.3] (<a href=https://soundcloud.com/bianca-constantinescu/gathaspar-op-3-chypre002>https://soundcloud.com/bianca-constantinescu/gathaspar-op-3-chypre002</a>)
+[Cocteau Twins – Cherry-Coloured Funk (Stijn&rsquo;s House Mix)] (<a href=https://soundcloud.com/stijns-bootleg-remixes/cocteau-twins-cherry-coloured-funk-stijns-house-mix>https://soundcloud.com/stijns-bootleg-remixes/cocteau-twins-cherry-coloured-funk-stijns-house-mix</a>)</p><p>Other songs I&rsquo;ve been enjoying and matching my vibe:</p><ul><li>All the things she said by t.A.T.u (from heated rivalry ofc)</li><li>Drugs by Ratatat</li><li>DANCE.. by Slayyter</li><li>Lucifer by A.G. Cook</li></ul><p>xo
+Lia</p></div></main><script>function toggleMonth(e){const t=document.getElementById("month-"+e),n=document.querySelector(`[onclick="toggleMonth('${e}')"] .dropdown-arrow`);t.style.display==="none"?(t.style.display="block",n.textContent="▲"):(t.style.display="none",n.textContent="▼")}</script></body></html>

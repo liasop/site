@@ -22,3 +22,6 @@ desktop.ini
 *.log
 npm-debug.log*
 
+
+# Claude Code local tooling
+.claude/
